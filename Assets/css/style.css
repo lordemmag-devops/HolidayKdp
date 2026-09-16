@@ -455,27 +455,25 @@ button {
 .vault-book {
     position: relative;
     z-index: 3;
-    width: 390px;
-    min-height: 520px;
-    overflow: hidden;
-    border-radius: 8px 22px 22px 8px;
-    background: var(--evergreen);
+    width: min(530px, 68vw);
+    min-height: auto;
+    overflow: visible;
+    border-radius: 12px 26px 26px 12px;
+    background: transparent;
+    box-shadow: none;
+    transform: perspective(1400px) rotateY(-8deg) rotateX(2deg) scale(1.06);
+}
+
+.vault-book img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px 26px 26px 12px;
     box-shadow: var(--shadow-lg);
-    transform: perspective(1400px) rotateY(-8deg) rotateX(2deg);
 }
 
 .vault-book::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 12px;
-    height: 100%;
-    content: "";
-    background: linear-gradient(
-        to right,
-        rgba(255,255,255,0.12),
-        rgba(255,255,255,0)
-    );
+    display: none;
 }
 
 .vault-book-top {
