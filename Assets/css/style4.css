@@ -1047,6 +1047,209 @@ p + p {
     font-size: 13px;
 }
 
+.affiliate-contest-section {
+    background: linear-gradient(180deg, #f7faff 0%, #ffffff 100%);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.contest-heading {
+    margin-bottom: 30px;
+}
+
+.contest-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    padding: 8px 14px;
+    border: 1px solid rgba(36, 87, 214, 0.12);
+    border-radius: 999px;
+    background: rgba(36, 87, 214, 0.06);
+    color: var(--blue);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.contest-intro {
+    max-width: 760px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.contest-intro p {
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.contest-emphasis {
+    margin-top: 16px;
+    color: var(--navy) !important;
+    font-weight: 700;
+}
+
+.contest-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.contest-stat {
+    padding: 24px 18px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 24px rgba(16, 27, 53, 0.04);
+}
+
+.contest-stat strong {
+    display: block;
+    color: var(--navy);
+    font-size: clamp(26px, 2vw, 38px);
+    line-height: 1.08;
+    margin-bottom: 6px;
+}
+
+.contest-stat span {
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.contest-window {
+    display: grid;
+    gap: 8px;
+    padding: 28px 24px;
+    background: linear-gradient(135deg, var(--navy), #112958);
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: white;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.contest-window span {
+    font-size: clamp(18px, 2vw, 30px);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+.contest-window strong {
+    display: block;
+    color: #9bb5ff;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+}
+
+.contest-window small {
+    display: block;
+    margin-top: 8px;
+    color: #d2defa;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.contest-prizes {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+    margin: 28px 0 30px;
+}
+
+.prize-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 170px;
+    padding: 22px 18px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    background: var(--white);
+    box-shadow: 0 14px 30px rgba(16, 27, 53, 0.04);
+    text-align: center;
+}
+
+.prize-card span {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.13em;
+}
+
+.prize-card strong {
+    display: block;
+    color: var(--navy);
+    font-size: clamp(30px, 2.5vw, 44px);
+    line-height: 1;
+}
+
+.prize-card-first {
+    background: linear-gradient(180deg, #fff7d8, #fffdf7);
+    border-color: #f2d788;
+}
+
+.prize-card-first strong,
+.prize-card-first span {
+    color: #7c5a00;
+}
+
+.prize-card-second {
+    background: linear-gradient(180deg, #eef4ff, #ffffff);
+}
+
+.prize-card-third {
+    background: linear-gradient(180deg, #f8f9ff, #ffffff);
+}
+
+.prize-card-fourth,
+.prize-card-fifth {
+    background: linear-gradient(180deg, #f4f5f8, #ffffff);
+}
+
+.contest-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 18px;
+}
+
+.contest-total {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 12px;
+    color: var(--navy);
+}
+
+.contest-total span {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.contest-total strong {
+    font-size: clamp(28px, 2.5vw, 42px);
+    line-height: 1;
+    color: var(--blue);
+}
+
+.affiliate-contest-section .btn {
+    white-space: nowrap;
+}
+
 /* =========================================================
    PROMOTION
 ========================================================= */
@@ -1546,13 +1749,24 @@ p + p {
     .theme-cards,
     .creative-grid,
     .angle-grid,
-    .promotion-grid {
+    .promotion-grid,
+    .contest-highlight-grid,
+    .contest-prizes {
         grid-template-columns: 1fr;
     }
 
     .angle-grid article:last-child,
     .promotion-grid article:last-child {
         grid-column: auto;
+    }
+
+    .contest-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .affiliate-contest-section .btn {
+        width: 100%;
     }
 
     .two-col {

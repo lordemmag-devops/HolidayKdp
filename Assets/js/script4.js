@@ -220,20 +220,15 @@ document.addEventListener("DOMContentLoaded", function () {
     ===================================================== */
 
     const affiliateLinks = document.querySelectorAll(
-        'a[href="https://warriorplus.com/as/o/j00wmd"]'
+        'a[href="https://warriorplus.com/affiliate/contest/ng7xv"]'
     );
 
     affiliateLinks.forEach(function (link) {
 
         link.addEventListener("click", function () {
 
-            /*
-             * The affiliate request URL is intentionally kept
-             * exactly as supplied in the JV brief.
-             */
-
             console.log(
-                "WarriorPlus affiliate request link opened."
+                "WarriorPlus affiliate contest link opened."
             );
 
         });
