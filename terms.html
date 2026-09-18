@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Holiday KDP - Terms & Conditions</title>
+
+  <style>
+    /* =====================================================
+       HOLIDAY KDP — TERMS & CONDITIONS
+       CSS IS INCLUDED IN THIS FILE
+    ===================================================== */
+
+    :root {
+      --primary: #111827;
+      --secondary: #4b5563;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --background: #f7f8fa;
+      --white: #ffffff;
+      --accent: #374151;
+      --notice-bg: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--secondary);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+    }
+
+    /* =====================================================
+       MAIN CONTAINER
+    ===================================================== */
+
+    .terms-container {
+      width: 100%;
+      max-width: 950px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    /* =====================================================
+       TERMS CARD
+    ===================================================== */
+
+    .terms-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 50px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    .terms-header {
+      padding-bottom: 30px;
+      margin-bottom: 35px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .terms-title {
+      margin: 0 0 10px;
+      color: var(--primary);
+      font-size: 34px;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .last-updated {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .terms-content {
+      font-size: 15px;
+    }
+
+    .terms-content h2 {
+      margin: 38px 0 14px;
+      color: var(--primary);
+      font-size: 21px;
+      line-height: 1.35;
+      font-weight: 700;
+    }
+
+    .terms-content h3 {
+      margin: 25px 0 10px;
+      color: var(--primary);
+      font-size: 17px;
+      line-height: 1.4;
+    }
+
+    .terms-content p {
+      margin: 0 0 17px;
+    }
+
+    .terms-content strong {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .terms-content ul,
+    .terms-content ol {
+      margin: 10px 0 20px 25px;
+      padding: 0;
+    }
+
+    .terms-content li {
+      margin-bottom: 8px;
+      padding-left: 3px;
+    }
+
+    /* =====================================================
+       NOTICE BOX
+    ===================================================== */
+
+    .notice-box {
+      margin: 25px 0;
+      padding: 18px 20px;
+      background: var(--notice-bg);
+      border-left: 4px solid #6b7280;
+      border-radius: 5px;
+    }
+
+    .notice-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* =====================================================
+       PRODUCT BOX
+    ===================================================== */
+
+    .product-box {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    .product-box h3 {
+      margin-top: 0;
+    }
+
+    /* =====================================================
+       CONTACT BOX
+    ===================================================== */
+
+    .contact-box {
+      margin-top: 30px;
+      padding: 22px;
+      background: var(--notice-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .terms-footer {
+      margin-top: 45px;
+      padding-top: 25px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =====================================================
+       BACK TO TOP BUTTON
+    ===================================================== */
+
+    #backToTop {
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+
+      width: 45px;
+      height: 45px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: none;
+      border-radius: 50%;
+
+      background: var(--primary);
+      color: white;
+
+      font-size: 18px;
+      cursor: pointer;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease;
+    }
+
+    #backToTop:hover {
+      transform: translateY(-3px);
+    }
+
+    #backToTop.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* =====================================================
+       MOBILE RESPONSIVE
+    ===================================================== */
+
+    @media (max-width: 768px) {
+
+      .terms-container {
+        margin: 25px auto;
+        padding: 0 12px;
+      }
+
+      .terms-card {
+        padding: 30px 22px;
+        border-radius: 10px;
+      }
+
+      .terms-title {
+        font-size: 27px;
+      }
+
+      .terms-content {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      .terms-content h2 {
+        font-size: 19px;
+        margin-top: 32px;
+      }
+
+      .terms-content h3 {
+        font-size: 16px;
+      }
+
+      #backToTop {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .terms-card {
+        padding: 25px 17px;
+      }
+
+      .terms-title {
+        font-size: 24px;
+      }
+
+      .terms-content ul,
+      .terms-content ol {
+        margin-left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       HOLIDAY KDP TERMS & CONDITIONS
+  ====================================================== -->
+
+  <main class="terms-container">
+
+    <article class="terms-card">
+
+      <!-- HEADER -->
+
+      <header class="terms-header">
+
+        <h1 class="terms-title">
+          Holiday KDP Terms &amp; Conditions
+        </h1>
+
+        <p class="last-updated">
+          <strong>Last Updated: September 2026</strong>
+        </p>
+
+      </header>
+
+
+      <!-- TERMS CONTENT -->
+
+      <div class="terms-content">
+
+        <!-- 1 -->
+
+        <h2>1. Acceptance of Terms</h2>
+
+        <p>
+          These Terms &amp; Conditions ("Terms") govern your purchase, access to,
+          and use of products and resources provided under the
+          <strong>Holiday KDP</strong> brand ("Holiday KDP," "we," "us," or "our").
+        </p>
+
+        <p>
+          By purchasing, accessing, downloading, or using any Holiday KDP product,
+          you acknowledge that you have read, understood, and agreed to these Terms.
+          If you do not agree with these Terms, please do not purchase, access,
+          download, or use the products.
+        </p>
+
+        <p>
+          These Terms apply to all Holiday KDP products and resources, including
+          the Winter Content Vault, Holiday KDP Master-Pack, Commercial &amp;
+          Reseller Rights License, and Done-For-You Holiday Bundle, as well as
+          related digital materials supplied with those products.
+        </p>
+
+
+        <!-- 2 -->
+
+        <h2>2. Our Products</h2>
+
+        <p>
+          Holiday KDP provides digital tools, resources, templates, prompts,
+          educational materials, productivity resources, and publishing-related
+          materials intended to assist creators and KDP publishers with developing
+          and preparing seasonal book content.
+        </p>
+
+
+        <div class="product-box">
+
+          <h3>2.1 Winter Content Vault</h3>
+
+          <p>
+            <strong>Winter Content Vault: 500 AI Prompts for Christmas,
+            Hanukkah &amp; New Year KDP Books</strong> is a digital prompt library
+            designed to assist KDP publishers in generating seasonal book-content
+            ideas and materials using AI tools.
+          </p>
+
+          <p>
+            The prompts are resources intended to assist your creative and
+            publishing workflow. They do not guarantee any particular output,
+            publishing result, sales result, or platform approval.
+          </p>
+
+        </div>
+
+
+        <div class="product-box">
+
+          <h3>2.2 Holiday KDP Master-Pack</h3>
+
+          <p>
+            <strong>Holiday KDP Master-Pack: Full Book Templates + Batch
+            Production System</strong> includes resources such as 1,000+ book
+            templates, 60 cover prompts, 7 batch-production meta-prompts, and
+            workflow materials intended to help users produce seasonal KDP books
+            more efficiently.
+          </p>
+
+          <p>
+            The materials are provided as productivity and publishing resources.
+            They do not guarantee that any particular book will be accepted,
+            approved, ranked, or sold.
+          </p>
+
+        </div>
+
+
+        <div class="product-box">
+
+          <h3>2.3 Commercial &amp; Reseller Rights License</h3>
+
+          <p>
+            The <strong>Commercial &amp; Reseller Rights License</strong> provides
+            commercial and reseller rights to the materials covered by the
+            applicable license.
+          </p>
+
+          <p>
+            The exact rights granted are subject to the specific license terms
+            supplied with the product. Purchasing the license does not transfer
+            ownership of the underlying Holiday KDP system or intellectual property.
+          </p>
+
+          <p>
+            Where the license permits, buyers may:
+          </p>
+
+          <ul>
+            <li>Rebrand the licensed materials.</li>
+            <li>Reprice the licensed materials.</li>
+            <li>Bundle the licensed materials with other products.</li>
+            <li>Resell the licensed materials commercially.</li>
+          </ul>
+
+          <p>
+            Buyers may not:
+          </p>
+
+          <ul>
+            <li>Resell, transfer, or sublicense the reseller rights themselves.</li>
+            <li>Claim authorship or ownership of the Holiday KDP system itself.</li>
+            <li>Misrepresent the origin or ownership of the underlying system.</li>
+            <li>Grant customers or third parties rights beyond those provided by the applicable license.</li>
+            <li>Use the licensed materials in a manner that infringes applicable intellectual-property rights or violates applicable law.</li>
+          </ul>
+
+          <p>
+            If there is a conflict between these general Terms and the specific
+            Commercial &amp; Reseller Rights License, the specific license terms
+            will govern the rights granted under that license.
+          </p>
+
+        </div>
+
+
+        <div class="product-box">
+
+          <h3>2.4 Done-For-You Holiday Bundle</h3>
+
+          <p>
+            The <strong>Done-For-You Holiday Bundle</strong> provides
+            <strong>10 completed books covering Christmas, Winter, and New Year</strong>,
+            together with the applicable Year-Round Seasonal License.
+          </p>
+
+          <p>
+            <strong>The Done-For-You Bundle does not contain Hanukkah books.</strong>
+          </p>
+
+          <p>
+            The books are provided as completed publishing resources intended
+            to assist with the publishing workflow. Buyers should review the
+            supplied files and make any necessary changes before uploading or
+            publishing them.
+          </p>
+
+        </div>
+
+
+        <!-- 3 -->
+
+        <h2>3. Digital Product Delivery</h2>
+
+        <p>
+          Holiday KDP products are digital products and are delivered electronically.
+        </p>
+
+        <p>
+          Depending on the product and delivery system, access or download
+          instructions may be provided after purchase through email, a customer
+          access area, download page, or another electronic delivery method.
+        </p>
+
+        <p>You are responsible for:</p>
+
+        <ul>
+          <li>Providing a valid email address when purchasing.</li>
+          <li>Maintaining access to the email address associated with your purchase.</li>
+          <li>Keeping your account or access information secure.</li>
+          <li>Following the instructions provided for accessing or downloading your purchased materials.</li>
+        </ul>
+
+        <p>
+          We are not responsible for delivery problems caused by an incorrect
+          email address, inaccessible email account, spam filtering, or other
+          circumstances within your control.
+        </p>
+
+        <p>
+          If you experience a genuine delivery or access problem, please contact
+          support using the email address provided at the end of these Terms.
+        </p>
+
+
+        <!-- 4 -->
+
+        <h2>4. License and Permitted Use</h2>
+
+        <p>
+          When you purchase a Holiday KDP product, you receive a limited right
+          to use the materials included with that specific product according
+          to the applicable product terms and license.
+        </p>
+
+        <div class="notice-box">
+
+          <p>
+            <strong>Important:</strong> Purchasing one Holiday KDP product does
+            not automatically give you the rights included with another product.
+          </p>
+
+          <p>
+            For example, purchasing the Winter Content Vault or Holiday KDP
+            Master-Pack does not automatically grant Commercial &amp; Reseller
+            Rights unless those rights are expressly included in the purchase.
+          </p>
+
+        </div>
+
+        <p>
+          You may use purchased materials only in accordance with the rights
+          expressly granted to you.
+        </p>
+
+        <p>
+          You may not assume, transfer, sell, sublicense, or grant rights that
+          have not been expressly provided.
+        </p>
+
+
+        <!-- 5 -->
+
+        <h2>5. Commercial &amp; Reseller Rights</h2>
+
+        <p>
+          Where a valid Commercial &amp; Reseller Rights License has been
+          purchased, the license permits the buyer to commercially use and
+          resell the licensed materials within the limits of the applicable
+          license.
+        </p>
+
+        <p>
+          Subject to those license terms, permitted activities may include
+          rebranding, repricing, bundling, and commercially reselling the
+          licensed materials.
+        </p>
+
+        <p>However, the reseller license itself may not be:</p>
+
+        <ul>
+          <li>Sold or transferred to another person.</li>
+          <li>Represented as the buyer's own original Holiday KDP system.</li>
+          <li>Used to misrepresent the source or ownership of the underlying system.</li>
+          <li>Used to grant customers rights greater than the rights provided by the license.</li>
+        </ul>
+
+        <p>
+          The license applies only to the materials and rights expressly
+          identified in the applicable license.
+        </p>
+
+
+        <!-- 6 -->
+
+        <h2>6. Intellectual Property</h2>
+
+        <p>
+          Holiday KDP and its original materials, branding, systems, written
+          content, designs, templates, instructional materials, and other
+          intellectual property remain protected by applicable intellectual-property
+          laws, except where specific rights are expressly granted to you.
+        </p>
+
+        <p>
+          Purchasing a Holiday KDP product does <strong>not</strong> transfer
+          ownership of the underlying Holiday KDP intellectual property to you.
+        </p>
+
+        <p>
+          Where a product includes a license allowing commercial use,
+          modification, or resale, those rights are limited to the specific
+          rights expressly granted by that license.
+        </p>
+
+
+        <!-- 7 -->
+
+        <h2>7. AI-Generated Content</h2>
+
+        <p>
+          Some Holiday KDP products contain prompts, meta-prompts, templates,
+          or other resources intended for use with artificial-intelligence tools.
+        </p>
+
+        <p>
+          AI tools may produce results that are inaccurate, incomplete,
+          repetitive, unsuitable, or otherwise require revision.
+        </p>
+
+        <p>
+          You are responsible for reviewing, editing, fact-checking, and
+          evaluating any AI-generated material before using, distributing,
+          or publishing it.
+        </p>
+
+        <p>
+          You should not assume that AI-generated content is automatically
+          original, accurate, legally suitable, or appropriate for publication.
+        </p>
+
+
+        <!-- 8 -->
+
+        <h2>8. KDP and Publishing Responsibility</h2>
+
+        <p>
+          Holiday KDP provides publishing resources, but the buyer remains
+          responsible for the final books and content they submit to Amazon KDP
+          or any other platform.
+        </p>
+
+        <p>Before publishing, you are responsible for reviewing your final materials and ensuring that they comply with applicable:</p>
+
+        <ul>
+          <li>Amazon KDP requirements and policies.</li>
+          <li>Copyright requirements.</li>
+          <li>Trademark rules.</li>
+          <li>Content requirements.</li>
+          <li>Publishing rules.</li>
+          <li>Advertising and marketing requirements.</li>
+          <li>Other applicable laws and platform policies.</li>
+        </ul>
+
+        <p>
+          Holiday KDP does not guarantee that any book or other content created
+          using our materials will be accepted or approved by Amazon KDP or
+          another platform.
+        </p>
+
+        <p>
+          Amazon KDP and other third-party platforms may change their requirements,
+          policies, review procedures, algorithms, or other operating conditions
+          at any time.
+        </p>
+
+
+        <!-- 9 -->
+
+        <h2>9. Done-For-You Books</h2>
+
+        <p>
+          The 10 books included in the Done-For-You Holiday Bundle are supplied
+          as completed publishing resources.
+        </p>
+
+        <p>
+          Although the materials are designed to assist with the publishing
+          process, buyers should review the files before publication.
+        </p>
+
+        <p>This review may include, where applicable:</p>
+
+        <ul>
+          <li>Book content.</li>
+          <li>Formatting.</li>
+          <li>Covers.</li>
+          <li>Titles.</li>
+          <li>Subtitles.</li>
+          <li>Descriptions.</li>
+          <li>Keywords.</li>
+          <li>Categories.</li>
+          <li>Metadata.</li>
+          <li>Images and other included elements.</li>
+          <li>Accuracy and suitability of the final content.</li>
+        </ul>
+
+        <p>
+          You are responsible for making any necessary corrections, edits,
+          or changes before submitting the final version to KDP or another platform.
+        </p>
+
+        <p>
+          The final version submitted for publication is your responsibility.
+        </p>
+
+
+        <!-- 10 -->
+
+        <h2>10. No Guarantee of Results</h2>
+
+        <p>
+          Holiday KDP does not guarantee any particular business, financial,
+          publishing, or marketing result.
+        </p>
+
+        <p>We do not guarantee:</p>
+
+        <ul>
+          <li>Sales.</li>
+          <li>Royalties.</li>
+          <li>Profits.</li>
+          <li>Rankings.</li>
+          <li>Reviews.</li>
+          <li>Publishing approval.</li>
+          <li>Account approval.</li>
+          <li>Traffic.</li>
+          <li>Customer demand.</li>
+          <li>Visibility.</li>
+          <li>Specific business results.</li>
+        </ul>
+
+        <p>
+          Your results may depend on numerous factors, including your
+          implementation, the quality of your finished books, niche selection,
+          pricing, covers, keywords, metadata, marketing, competition,
+          customer demand, marketplace conditions, platform policies, and
+          other factors outside our control.
+        </p>
+
+        <p>
+          Simply purchasing or using Holiday KDP prompts, templates, books,
+          or other resources does not automatically result in sales or
+          publishing success.
+        </p>
+
+
+        <!-- 11 -->
+
+        <h2>11. Examples, Demonstrations, and Testimonials</h2>
+
+        <p>
+          Any examples, demonstrations, illustrations, hypothetical scenarios,
+          sample outcomes, or other examples presented in Holiday KDP marketing
+          materials are provided for informational or educational purposes.
+        </p>
+
+        <p>
+          They should not be interpreted as promises or guarantees of future results.
+        </p>
+
+        <p>
+          Where testimonials or individual experiences are presented, those
+          experiences belong to the individuals concerned. Individual results
+          may vary and should not be understood as guaranteed or necessarily
+          representative of the results another buyer will achieve.
+        </p>
+
+
+        <!-- 12 -->
+
+        <h2>12. Third-Party Platforms and Services</h2>
+
+        <p>
+          Holiday KDP may reference, integrate with, or provide resources
+          intended for use with third-party platforms or services, including
+          Amazon KDP and AI tools.
+        </p>
+
+        <p>
+          Third-party platforms and services operate independently from
+          Holiday KDP.
+        </p>
+
+        <p>We do not control and are not responsible for changes to third-party:</p>
+
+        <ul>
+          <li>Policies.</li>
+          <li>Terms of service.</li>
+          <li>Algorithms.</li>
+          <li>Review or approval processes.</li>
+          <li>Account decisions.</li>
+          <li>Search rankings.</li>
+          <li>Availability.</li>
+          <li>Features.</li>
+          <li>Fees.</li>
+          <li>Marketplace conditions.</li>
+        </ul>
+
+        <p>
+          You are responsible for reviewing and complying with the current
+          requirements of any third-party platform you choose to use.
+        </p>
+
+        <p>
+          Holiday KDP is not affiliated with, endorsed by, sponsored by,
+          or officially connected with Amazon or Amazon KDP unless expressly
+          stated otherwise.
+        </p>
+
+
+        <!-- 13 -->
+
+        <h2>13. Prohibited Activities</h2>
+
+        <p>
+          You agree not to use Holiday KDP products or access rights to:
+        </p>
+
+        <ol>
+          <li>Infringe copyright, trademark, or other intellectual-property rights.</li>
+          <li>Engage in fraudulent or deceptive activity.</li>
+          <li>Use the materials for unlawful purposes.</li>
+          <li>Misrepresent the origin or ownership of Holiday KDP materials where such representation is not permitted.</li>
+          <li>Redistribute or share purchased materials outside the rights granted to you.</li>
+          <li>Share private download links or access credentials with unauthorized persons.</li>
+          <li>Resell Holiday KDP products without the required commercial or reseller license.</li>
+          <li>Resell, transfer, or sublicense reseller rights themselves.</li>
+          <li>Grant third parties rights that exceed the rights provided by your license.</li>
+          <li>Circumvent reasonable access or security measures used to protect the products.</li>
+        </ol>
+
+
+        <!-- 14 -->
+
+        <h2>14. Refund Policy</h2>
+
+        <p>
+          Holiday KDP offers a <strong>7-day refund period</strong> for eligible purchases.
+        </p>
+
+        <p>
+          Refund requests must be submitted within <strong>7 days of the original
+          purchase</strong>, subject to the applicable refund terms for the
+          product purchased.
+        </p>
+
+        <p>
+          To request a refund, contact Holiday KDP using the support email
+          provided in the Contact section below and include sufficient information
+          to identify your purchase.
+        </p>
+
+        <p>
+          Refund eligibility will be determined according to the applicable
+          refund terms and the circumstances of the request.
+        </p>
+
+        <p>
+          Nothing in this section is intended to exclude or restrict any
+          consumer rights that cannot lawfully be excluded or restricted
+          under applicable law.
+        </p>
+
+
+        <!-- 15 -->
+
+        <h2>15. Access Suspension or Termination</h2>
+
+        <p>
+          Holiday KDP may suspend or terminate access to products or license
+          rights where reasonably necessary due to circumstances such as:
+        </p>
+
+        <ul>
+          <li>Unauthorized redistribution.</li>
+          <li>Sharing private access or download information.</li>
+          <li>Fraudulent activity.</li>
+          <li>Abuse of the product or delivery system.</li>
+          <li>Material violation of these Terms.</li>
+          <li>Material violation of the applicable license terms.</li>
+          <li>Unlawful use of the materials.</li>
+        </ul>
+
+        <p>
+          Where access or license rights are terminated because of a material
+          violation of these Terms or the applicable license, you must stop
+          using, distributing, or exploiting the affected materials to the
+          extent required by the applicable license and law.
+        </p>
+
+
+        <!-- 16 -->
+
+        <h2>16. Product Updates and Changes</h2>
+
+        <p>
+          Holiday KDP may reasonably update, modify, replace, or improve
+          product features, resources, delivery methods, or supporting
+          materials from time to time.
+        </p>
+
+        <p>
+          We may also update these Terms when reasonably necessary, including
+          to reflect changes to our products, processes, legal requirements,
+          or business operations.
+        </p>
+
+        <p>
+          When appropriate, updated Terms may be posted on the relevant
+          website or sales page.
+        </p>
+
+        <p>
+          Your continued use of Holiday KDP products after an applicable
+          update may constitute acceptance of the updated Terms.
+        </p>
+
+
+        <!-- 17 -->
+
+        <h2>17. Availability of Products and Services</h2>
+
+        <p>
+          We make reasonable efforts to provide purchased digital products
+          as described at the time of purchase.
+        </p>
+
+        <p>
+          However, we do not guarantee that websites, download systems,
+          customer areas, third-party services, or other technical systems
+          will always be uninterrupted or available.
+        </p>
+
+        <p>
+          Temporary interruptions may occur due to maintenance, technical
+          issues, updates, third-party services, or circumstances beyond
+          our reasonable control.
+        </p>
+
+
+        <!-- 18 -->
+
+        <h2>18. Limitation of Liability</h2>
+
+        <p>
+          To the extent permitted by applicable law, Holiday KDP will not
+          be responsible for indirect, incidental, special, consequential,
+          or similar losses arising from your use of, or inability to use,
+          our products or materials, including losses associated with
+          business interruption, loss of profits, loss of sales, loss of
+          data, or loss of expected business opportunities.
+        </p>
+
+        <p>
+          Holiday KDP is also not responsible for decisions made by third-party
+          platforms, including decisions concerning account status, content
+          approval, publishing eligibility, search rankings, visibility,
+          or marketplace participation.
+        </p>
+
+        <p>
+          Nothing in these Terms excludes or limits liability that cannot
+          lawfully be excluded or limited under applicable law.
+        </p>
+
+        <p>
+          To the extent liability cannot be excluded but may be limited,
+          any limitation will apply only to the extent permitted by applicable law.
+        </p>
+
+
+        <!-- 19 -->
+
+        <h2>19. Your Responsibility</h2>
+
+        <p>
+          You are responsible for how you use Holiday KDP materials.
+        </p>
+
+        <div class="notice-box">
+
+          <p>
+            You are also responsible for reviewing, editing, fact-checking,
+            and verifying your final content and for ensuring that your books,
+            listings, marketing materials, and other published content comply
+            with applicable laws, copyright and trademark requirements,
+            Amazon KDP requirements, and other relevant platform policies.
+          </p>
+
+          <p>
+            Holiday KDP resources are intended to assist your publishing
+            workflow; they do not replace your responsibility to make
+            appropriate decisions about the final content you publish.
+          </p>
+
+        </div>
+
+
+        <!-- 20 -->
+
+        <h2>20. Governing Law and Jurisdiction</h2>
+
+        <p>
+          These Terms shall be governed by the laws of:
+        </p>
+
+        <div class="notice-box">
+
+          <p>
+            <strong>[INSERT GOVERNING LAW / JURISDICTION]</strong>
+          </p>
+
+        </div>
+
+        <p>
+          Any applicable dispute-resolution or jurisdiction provisions should
+          be interpreted according to the governing law and jurisdiction
+          selected for the Holiday KDP business.
+        </p>
+
+
+        <!-- 21 -->
+
+        <h2>21. Severability</h2>
+
+        <p>
+          If any provision of these Terms is found to be invalid, unlawful,
+          or unenforceable under applicable law, that provision will be applied
+          to the maximum extent permitted, and the remaining provisions will
+          continue to apply to the extent permitted by law.
+        </p>
+
+
+        <!-- 22 -->
+
+        <h2>22. Entire Agreement</h2>
+
+        <p>
+          These Terms, together with any applicable product-specific license
+          terms, refund terms, purchase terms, or other terms expressly
+          incorporated into your purchase, describe the principal terms
+          governing your use of the applicable Holiday KDP products.
+        </p>
+
+        <p>
+          Where a specific product license provides additional or different
+          rights and restrictions, those product-specific terms will apply
+          to those rights and restrictions.
+        </p>
+
+
+        <!-- 23 -->
+
+        <h2>23. Contact</h2>
+
+        <div class="contact-box">
+
+          <p>
+            If you have questions about these Terms, product access, licensing,
+            or a purchase, please contact Holiday KDP at:
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:lordemmag@yahoo.com">
+              lordemmag@yahoo.com
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- FOOTER -->
+
+      <footer class="terms-footer">
+
+        <p>
+          <strong>Last Updated: September 2026</strong>
+        </p>
+
+        <p>
+          By purchasing, accessing, downloading, or using Holiday KDP materials,
+          you acknowledge that you are responsible for how you use those materials
+          and for ensuring that your final content complies with applicable laws
+          and platform policies.
+        </p>
+
+      </footer>
+
+    </article>
+
+  </main>
+
+
+  <!-- BACK TO TOP BUTTON -->
+
+  <button
+    id="backToTop"
+    type="button"
+    aria-label="Back to top"
+    title="Back to top"
+  >
+    ↑
+  </button>
+
+
+  <script>
+    /* =====================================================
+       HOLIDAY KDP — TERMS & CONDITIONS
+       JAVASCRIPT IS INCLUDED IN THIS FILE
+    ===================================================== */
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const backToTopButton = document.getElementById("backToTop");
+
+
+      /* ==========================================
+         SHOW / HIDE BACK TO TOP BUTTON
+      ========================================== */
+
+      window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 500) {
+          backToTopButton.classList.add("show");
+        } else {
+          backToTopButton.classList.remove("show");
+        }
+
+      });
+
+
+      /* ==========================================
+         BACK TO TOP FUNCTION
+      ========================================== */
+
+      backToTopButton.addEventListener("click", function () {
+
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+
+      });
+
+
+      /* ==========================================
+         EXTERNAL EMAIL LINK
+      ========================================== */
+
+      const emailLinks = document.querySelectorAll(
+        'a[href^="mailto:"]'
+      );
+
+      emailLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+          // Opens the visitor's default email application.
+        });
+
+      });
+
+    });
+  </script>
+
+</body>
+</html>

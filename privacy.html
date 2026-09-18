@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Holiday KDP - Privacy Policy</title>
+
+  <style>
+    /* =====================================================
+       HOLIDAY KDP — PRIVACY POLICY
+       HTML + CSS + JAVASCRIPT IN ONE FILE
+    ===================================================== */
+
+    :root {
+      --primary: #111827;
+      --secondary: #4b5563;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --background: #f7f8fa;
+      --white: #ffffff;
+      --notice-bg: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--secondary);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+    }
+
+    /* =====================================================
+       MAIN CONTAINER
+    ===================================================== */
+
+    .privacy-container {
+      width: 100%;
+      max-width: 950px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    /* =====================================================
+       POLICY CARD
+    ===================================================== */
+
+    .privacy-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 50px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    .privacy-header {
+      padding-bottom: 30px;
+      margin-bottom: 35px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-title {
+      margin: 0 0 10px;
+      color: var(--primary);
+      font-size: 34px;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .last-updated {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .privacy-content {
+      font-size: 15px;
+    }
+
+    .privacy-content h2 {
+      margin: 38px 0 14px;
+      color: var(--primary);
+      font-size: 21px;
+      line-height: 1.35;
+      font-weight: 700;
+    }
+
+    .privacy-content h3 {
+      margin: 25px 0 10px;
+      color: var(--primary);
+      font-size: 17px;
+      line-height: 1.4;
+    }
+
+    .privacy-content p {
+      margin: 0 0 17px;
+    }
+
+    .privacy-content strong {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .privacy-content ul,
+    .privacy-content ol {
+      margin: 10px 0 20px 25px;
+      padding: 0;
+    }
+
+    .privacy-content li {
+      margin-bottom: 8px;
+      padding-left: 3px;
+    }
+
+    /* =====================================================
+       NOTICE BOX
+    ===================================================== */
+
+    .notice-box {
+      margin: 25px 0;
+      padding: 18px 20px;
+      background: var(--notice-bg);
+      border-left: 4px solid #6b7280;
+      border-radius: 5px;
+    }
+
+    .notice-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* =====================================================
+       CONTACT BOX
+    ===================================================== */
+
+    .contact-box {
+      margin-top: 30px;
+      padding: 22px;
+      background: var(--notice-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .contact-box a:hover {
+      opacity: 0.7;
+    }
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .privacy-footer {
+      margin-top: 45px;
+      padding-top: 25px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =====================================================
+       BACK TO TOP BUTTON
+    ===================================================== */
+
+    #backToTop {
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+
+      width: 45px;
+      height: 45px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: none;
+      border-radius: 50%;
+
+      background: var(--primary);
+      color: white;
+
+      font-size: 18px;
+      cursor: pointer;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease;
+    }
+
+    #backToTop:hover {
+      transform: translateY(-3px);
+    }
+
+    #backToTop.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* =====================================================
+       MOBILE RESPONSIVE
+    ===================================================== */
+
+    @media (max-width: 768px) {
+
+      .privacy-container {
+        margin: 25px auto;
+        padding: 0 12px;
+      }
+
+      .privacy-card {
+        padding: 30px 22px;
+        border-radius: 10px;
+      }
+
+      .privacy-title {
+        font-size: 27px;
+      }
+
+      .privacy-content {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      .privacy-content h2 {
+        font-size: 19px;
+        margin-top: 32px;
+      }
+
+      .privacy-content h3 {
+        font-size: 16px;
+      }
+
+      #backToTop {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .privacy-card {
+        padding: 25px 17px;
+      }
+
+      .privacy-title {
+        font-size: 24px;
+      }
+
+      .privacy-content ul,
+      .privacy-content ol {
+        margin-left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       HOLIDAY KDP PRIVACY POLICY
+  ====================================================== -->
+
+  <main class="privacy-container">
+
+    <article class="privacy-card">
+
+      <!-- HEADER -->
+
+      <header class="privacy-header">
+
+        <h1 class="privacy-title">
+          Privacy Policy
+        </h1>
+
+        <p class="last-updated">
+          <strong>Last Updated: September 2026</strong>
+        </p>
+
+      </header>
+
+
+      <!-- PRIVACY POLICY CONTENT -->
+
+      <div class="privacy-content">
+
+        <!-- 1 -->
+
+        <h2>1. Information We May Collect</h2>
+
+        <p>
+          Holiday KDP ("Holiday KDP," "we," "us," or "our") respects your privacy
+          and is committed to being transparent about how information may be
+          collected, used, stored, and shared when you visit our website, interact
+          with our sales funnel, purchase our digital products, access purchased
+          materials, or communicate with us.
+        </p>
+
+        <p>
+          Depending on how you interact with Holiday KDP, we may receive or collect
+          information such as:
+        </p>
+
+        <ul>
+          <li>Name.</li>
+          <li>Email address.</li>
+          <li>Purchase and order information.</li>
+          <li>Transaction-related information.</li>
+          <li>Support messages and correspondence.</li>
+          <li>IP address.</li>
+          <li>Browser and device information.</li>
+          <li>Pages visited and general website usage information.</li>
+          <li>Cookies and similar technologies.</li>
+        </ul>
+
+        <p>
+          The information collected may vary depending on the page you visit,
+          the services you use, and the way you interact with our website
+          or products.
+        </p>
+
+
+        <!-- PAYMENT INFORMATION -->
+
+        <h3>Payment Information</h3>
+
+        <div class="notice-box">
+
+          <p>
+            Holiday KDP does not claim to directly collect or store your
+            payment-card details when payments are processed through a
+            third-party payment processor or sales platform.
+          </p>
+
+          <p>
+            Payment processors and sales platforms may independently collect
+            and process payment information necessary to complete a transaction.
+            Their handling of payment information is governed by their own
+            privacy policies and terms.
+          </p>
+
+        </div>
+
+
+        <!-- 2 -->
+
+        <h2>2. How We Use Information</h2>
+
+        <p>
+          Information may be used for legitimate business and operational
+          purposes, including to:
+        </p>
+
+        <ul>
+          <li>Process and fulfill purchases.</li>
+          <li>Deliver digital products and provide access to purchased materials.</li>
+          <li>Provide customer support.</li>
+          <li>Respond to questions, requests, and communications.</li>
+          <li>Send transactional communications relating to purchases or product access.</li>
+          <li>Send marketing or promotional emails where legally permitted and where appropriate consent has been obtained.</li>
+          <li>Improve our website, products, resources, and customer experience.</li>
+          <li>Understand general website usage and performance.</li>
+          <li>Measure and improve the effectiveness of our marketing where applicable.</li>
+          <li>Help prevent fraud, abuse, unauthorized access, and other unauthorized activity.</li>
+          <li>Maintain business, accounting, and transaction records where reasonably necessary.</li>
+          <li>Comply with applicable legal obligations.</li>
+          <li>Resolve disputes and enforce applicable agreements.</li>
+        </ul>
+
+        <p>
+          We do not use customer information for purposes that are materially
+          inconsistent with the purposes described in this Privacy Policy unless
+          permitted or required by applicable law.
+        </p>
+
+
+        <!-- 3 -->
+
+        <h2>3. Email Communications</h2>
+
+        <p>
+          If you purchase a Holiday KDP product, request support, or otherwise
+          communicate with us, you may receive emails relating to:
+        </p>
+
+        <ul>
+          <li>Your purchase.</li>
+          <li>Product access or delivery.</li>
+          <li>Customer support.</li>
+          <li>Important service or product updates.</li>
+          <li>Other communications necessary to provide the services or products you requested.</li>
+          <li>Promotional communications where permitted.</li>
+        </ul>
+
+        <p>
+          Where marketing emails are sent, you can unsubscribe by using the
+          unsubscribe mechanism provided in the applicable email.
+        </p>
+
+        <p>
+          Please note that unsubscribing from marketing communications does
+          not necessarily stop transactional or service-related emails.
+          We may continue to send communications that are necessary to fulfill
+          an order, provide access to purchased products, respond to a support
+          request, or communicate important information about a service or
+          transaction.
+        </p>
+
+
+        <!-- 4 -->
+
+        <h2>4. Cookies and Similar Technologies</h2>
+
+        <p>
+          The Holiday KDP website may use cookies and similar technologies.
+        </p>
+
+        <p>These technologies may be used for purposes such as:</p>
+
+        <ul>
+          <li>Supporting essential website functionality.</li>
+          <li>Remembering preferences.</li>
+          <li>Understanding how visitors use the website.</li>
+          <li>Measuring website performance.</li>
+          <li>Measuring marketing or advertising performance where applicable.</li>
+          <li>Helping improve the website and user experience.</li>
+        </ul>
+
+        <p>
+          The specific cookies or technologies used may change over time
+          depending on the services and features implemented on the website.
+        </p>
+
+        <p>
+          We do not represent that every type of tracking or analytics
+          technology is used at all times.
+        </p>
+
+        <p>
+          Depending on your browser, device, or location, you may have controls
+          available to manage or restrict cookies. Disabling certain cookies
+          may affect some website functionality.
+        </p>
+
+
+        <!-- 5 -->
+
+        <h2>5. Third-Party Services</h2>
+
+        <p>
+          Holiday KDP may use third-party service providers to help operate
+          the website, sales funnel, and digital-product business.
+        </p>
+
+        <p>Depending on the services in use, these providers may include categories such as:</p>
+
+        <ul>
+          <li>Payment processors.</li>
+          <li>Sales or affiliate platforms.</li>
+          <li>Website hosting providers.</li>
+          <li>Email service providers.</li>
+          <li>File storage or digital-delivery services.</li>
+          <li>Analytics services.</li>
+          <li>Marketing or advertising services.</li>
+        </ul>
+
+        <p>
+          Third-party providers may process information on our behalf or
+          independently in connection with the services they provide.
+        </p>
+
+        <p>
+          Their handling of information may be governed by their own privacy
+          policies, terms, and practices.
+        </p>
+
+        <p>
+          We do not list specific third-party providers in this Privacy Policy
+          unless they are confirmed to be in use.
+        </p>
+
+
+        <!-- 6 -->
+
+        <h2>6. Affiliate Links</h2>
+
+        <p>
+          Some links on the Holiday KDP website or within promotional materials
+          may be affiliate links.
+        </p>
+
+        <p>
+          Where applicable, affiliate platforms may use tracking technologies
+          to determine whether a visitor was referred through an affiliate
+          link and to attribute a referral or commission.
+        </p>
+
+        <p>
+          Affiliate tracking does not give Holiday KDP unrestricted access
+          to a visitor's private information.
+        </p>
+
+        <p>
+          The information available through an affiliate relationship depends
+          on the particular affiliate platform, its technology, and its
+          applicable privacy practices.
+        </p>
+
+
+        <!-- 7 -->
+
+        <h2>7. How Information May Be Shared</h2>
+
+        <p>
+          We may share information when reasonably necessary to operate the
+          Holiday KDP business and provide products or services.
+        </p>
+
+        <p>This may include sharing information with trusted service providers that assist with:</p>
+
+        <ul>
+          <li>Payment processing.</li>
+          <li>Product delivery.</li>
+          <li>Website operation.</li>
+          <li>Customer support.</li>
+          <li>Email communications.</li>
+          <li>Data storage.</li>
+          <li>Analytics.</li>
+          <li>Marketing or advertising activities, where applicable.</li>
+          <li>Fraud prevention and security.</li>
+        </ul>
+
+        <p>
+          Information may also be disclosed where required or permitted by
+          applicable law, such as in response to a valid legal request or
+          where necessary to protect rights, safety, property, or the
+          integrity of our services.
+        </p>
+
+        <div class="notice-box">
+
+          <p>
+            <strong>Holiday KDP does not sell personal information for money.</strong>
+          </p>
+
+          <p>
+            This statement does not prevent information from being processed
+            by third-party service providers as necessary to provide services,
+            complete transactions, operate the website, or otherwise conduct
+            legitimate business activities.
+          </p>
+
+        </div>
+
+
+        <!-- 8 -->
+
+        <h2>8. Data Retention</h2>
+
+        <p>
+          We may retain personal information for as long as reasonably necessary
+          for purposes such as:
+        </p>
+
+        <ul>
+          <li>Providing products and services.</li>
+          <li>Maintaining customer and purchase records.</li>
+          <li>Providing customer support.</li>
+          <li>Accounting and business administration.</li>
+          <li>Meeting applicable legal or regulatory obligations.</li>
+          <li>Resolving disputes.</li>
+          <li>Enforcing agreements.</li>
+          <li>Protecting against fraud or unauthorized activity.</li>
+        </ul>
+
+        <p>
+          The appropriate retention period may vary depending on the type of
+          information, why it was collected, and applicable legal or business
+          requirements.
+        </p>
+
+        <p>
+          We do not claim that all information is retained for a fixed period.
+        </p>
+
+
+        <!-- 9 -->
+
+        <h2>9. Data Security</h2>
+
+        <p>
+          We use reasonable measures intended to help protect personal
+          information against unauthorized access, misuse, loss, alteration,
+          or disclosure.
+        </p>
+
+        <p>
+          However, no method of transmitting information over the internet
+          or storing information electronically can be guaranteed to be
+          completely secure.
+        </p>
+
+        <p>
+          Accordingly, while we take reasonable steps to protect information,
+          we cannot guarantee absolute security.
+        </p>
+
+
+        <!-- 10 -->
+
+        <h2>10. Your Privacy Rights</h2>
+
+        <p>
+          Depending on where you live and the laws that apply to you, you
+          may have certain rights relating to your personal information.
+        </p>
+
+        <p>Where applicable, these rights may include the ability to:</p>
+
+        <ul>
+          <li>Request access to personal information we hold about you.</li>
+          <li>Request correction of inaccurate information.</li>
+          <li>Request deletion of personal information, subject to applicable exceptions.</li>
+          <li>Object to or request restriction of certain processing.</li>
+          <li>Withdraw consent where processing is based on consent.</li>
+          <li>Unsubscribe from marketing communications.</li>
+        </ul>
+
+        <p>
+          Privacy rights vary depending on the jurisdiction and circumstances.
+          Some requests may be subject to legal or other applicable exceptions.
+        </p>
+
+        <p>
+          If you would like to make a privacy-related request, you can contact
+          us using the email address provided in the Contact section below.
+        </p>
+
+
+        <!-- 11 -->
+
+        <h2>11. Children's Privacy</h2>
+
+        <p>
+          The Holiday KDP website and products are intended for adults and
+          businesses involved in publishing and related activities.
+        </p>
+
+        <p>
+          Our website and products are not knowingly directed toward children.
+        </p>
+
+        <p>
+          We do not knowingly collect personal information from children in
+          violation of applicable law.
+        </p>
+
+        <p>
+          If you believe that a child has provided personal information to
+          us in circumstances where such collection is not appropriate or
+          lawful, please contact us so that the matter can be reviewed.
+        </p>
+
+
+        <!-- 12 -->
+
+        <h2>12. International Visitors</h2>
+
+        <p>
+          Holiday KDP may have visitors and customers located in countries
+          other than the country in which our website, service providers,
+          or other business operations may be located.
+        </p>
+
+        <p>
+          As a result, personal information may be processed or stored in
+          a country different from the country where you live.
+        </p>
+
+        <p>
+          Where applicable, information may be transferred, processed, or
+          stored subject to the legal requirements that apply to those activities.
+        </p>
+
+        <p>
+          By using the website or purchasing our products, you acknowledge
+          that information may be processed through service providers operating
+          in different countries, subject to applicable requirements.
+        </p>
+
+
+        <!-- 13 -->
+
+        <h2>13. Amazon KDP and Other Platforms</h2>
+
+        <p>
+          Holiday KDP provides resources designed for creators and publishers
+          who may use platforms such as Amazon KDP.
+        </p>
+
+        <p>
+          References to Amazon KDP or other third-party platforms do not mean
+          that those platforms receive your personal information from Holiday
+          KDP unless such sharing is specifically required for a service or
+          transaction.
+        </p>
+
+        <p>
+          Third-party platforms operate independently and have their own
+          privacy policies, terms, security practices, and data-handling
+          procedures.
+        </p>
+
+        <p>
+          You should review the privacy policies and terms of any third-party
+          platform you choose to use.
+        </p>
+
+        <p>
+          Holiday KDP is not affiliated with, endorsed by, sponsored by,
+          or officially connected with Amazon or Amazon KDP unless expressly
+          stated otherwise.
+        </p>
+
+
+        <!-- 14 -->
+
+        <h2>14. Information You Provide to Us</h2>
+
+        <p>
+          When you voluntarily provide information to Holiday KDP, such as
+          when contacting support, submitting a question, or requesting
+          assistance, we may use that information to respond to your request
+          and provide the relevant service.
+        </p>
+
+        <p>
+          Please avoid sending sensitive personal information through ordinary
+          support communications unless it is specifically requested and
+          necessary for your request.
+        </p>
+
+
+        <!-- 15 -->
+
+        <h2>15. Links to Other Websites</h2>
+
+        <p>
+          The Holiday KDP website or promotional materials may contain links
+          to third-party websites, services, or platforms.
+        </p>
+
+        <p>
+          Those websites are operated independently from Holiday KDP and may
+          have their own privacy policies and terms.
+        </p>
+
+        <p>
+          We are not responsible for the privacy practices of third-party
+          websites that you choose to visit.
+        </p>
+
+        <p>
+          We recommend reviewing the applicable privacy policy of a
+          third-party website before providing it with personal information.
+        </p>
+
+
+        <!-- 16 -->
+
+        <h2>16. Data Related to Purchases</h2>
+
+        <p>
+          When you purchase a Holiday KDP product, information associated
+          with the transaction may be available to us through the relevant
+          sales or payment platform.
+        </p>
+
+        <p>
+          This may include information such as your name, email address,
+          order details, product purchased, transaction status, and other
+          information reasonably necessary to fulfill and support the purchase.
+        </p>
+
+        <p>
+          Payment-card information may be handled directly by the applicable
+          third-party payment processor rather than by Holiday KDP.
+        </p>
+
+        <p>
+          The exact information available to Holiday KDP may depend on the
+          payment processor, sales platform, delivery system, and services
+          used for the transaction.
+        </p>
+
+
+        <!-- 17 -->
+
+        <h2>17. Marketing and Promotional Tracking</h2>
+
+        <p>
+          Where applicable, Holiday KDP may use marketing or advertising
+          technologies provided by third parties to understand the performance
+          of promotional campaigns.
+        </p>
+
+        <p>
+          Such technologies may help measure activities such as visits,
+          referrals, conversions, or general campaign performance.
+        </p>
+
+        <p>
+          The specific technologies used may change over time.
+        </p>
+
+        <p>
+          Where required by applicable law, appropriate consent or other
+          lawful basis will be used for relevant processing.
+        </p>
+
+
+        <!-- 18 -->
+
+        <h2>18. Changes to This Privacy Policy</h2>
+
+        <p>
+          We may update this Privacy Policy from time to time to reflect
+          changes to our business, website, products, services, technology,
+          legal requirements, or privacy practices.
+        </p>
+
+        <p>
+          When this Privacy Policy is revised, the
+          <strong>Last Updated</strong> date at the top of this page will
+          indicate when it was most recently updated.
+        </p>
+
+        <p>
+          We encourage visitors and customers to review this Privacy Policy
+          periodically for changes.
+        </p>
+
+
+        <!-- 19 -->
+
+        <h2>19. Contact</h2>
+
+        <div class="contact-box">
+
+          <p>
+            If you have questions about this Privacy Policy, how information
+            may be handled, or wish to submit a privacy-related question or
+            request, please contact Holiday KDP at:
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:lordemmag@yahoo.com">
+              lordemmag@yahoo.com
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- FOOTER -->
+
+      <footer class="privacy-footer">
+
+        <p>
+          <strong>Last Updated: September 2026</strong>
+        </p>
+
+        <p>
+          Holiday KDP is committed to providing clear and transparent
+          information about how personal information may be handled.
+        </p>
+
+      </footer>
+
+    </article>
+
+  </main>
+
+
+  <!-- =====================================================
+       BACK TO TOP BUTTON
+  ====================================================== -->
+
+  <button
+    id="backToTop"
+    type="button"
+    aria-label="Back to top"
+    title="Back to top"
+  >
+    ↑
+  </button>
+
+
+  <script>
+    /* =====================================================
+       HOLIDAY KDP — PRIVACY POLICY
+       JAVASCRIPT IS INCLUDED IN THIS FILE
+    ===================================================== */
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const backToTopButton =
+        document.getElementById("backToTop");
+
+
+      /* ==========================================
+         SHOW / HIDE BACK TO TOP BUTTON
+      ========================================== */
+
+      window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 500) {
+
+          backToTopButton.classList.add("show");
+
+        } else {
+
+          backToTopButton.classList.remove("show");
+
+        }
+
+      });
+
+
+      /* ==========================================
+         BACK TO TOP FUNCTION
+      ========================================== */
+
+      backToTopButton.addEventListener("click", function () {
+
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+
+      });
+
+
+      /* ==========================================
+         EMAIL LINK
+      ========================================== */
+
+      const emailLinks =
+        document.querySelectorAll('a[href^="mailto:"]');
+
+      emailLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+          // Opens the visitor's default email application.
+        });
+
+      });
+
+    });
+  </script>
+
+</body>
+</html>
