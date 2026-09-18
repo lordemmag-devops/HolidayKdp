@@ -823,6 +823,26 @@ p {
 }
 
 
+.hero-mockup {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    min-height: auto;
+}
+
+
+.hero-product-image {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    border-radius: 18px;
+    object-fit: contain;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 1536 / 1024;
+}
+
+
 .mockup-placeholder::before {
 
     content: "✦";
@@ -1404,6 +1424,68 @@ p {
     font-size: 0.7rem;
 
     font-weight: 700;
+}
+
+
+.oto3-example-grid {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+.oto3-example-card {
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        var(--radius);
+
+    background:
+        var(--white);
+
+    box-shadow:
+        0 18px 40px
+        rgba(
+            17,
+            38,
+            32,
+            0.08
+        );
+}
+
+
+.oto3-example-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background: var(--winter);
+}
+
+
+.oto3-example-card[data-ratio="wide"] img {
+    aspect-ratio: 1536 / 1024;
+}
+
+
+.oto3-example-card[data-ratio="tall"] img {
+    aspect-ratio: 1312 / 1199;
+}
+
+
+.oto3-example-card[data-ratio="square"] img {
+    aspect-ratio: 1;
 }
 
 
